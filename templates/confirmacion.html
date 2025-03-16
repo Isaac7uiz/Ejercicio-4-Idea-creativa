@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación | Garantía JBL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Registro Exitoso</h1>
+    <p>El equipo ha sido registrado correctamente.</p>
+    <ul>
+        <li><strong>Cliente:</strong> {{ nombre }}</li>
+        <li><strong>Modelo:</strong> {{ modelo }}</li>
+        <li><strong>Número de Serie:</strong> {{ serial }}</li>
+    </ul>
+    <a href="{{ url_for('home') }}" class="boton">Volver al Inicio</a>
+</body>
+</html>

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Aplicación Flask</title>
+    <title>Inicio | Garantía JBL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>¡Hola, Flask!</h1>
-    <p>Esta es una interfaz simple con Flask.</p>
+    <h1>Bienvenido al Registro de Garantía JBL</h1>
+    <p>Si tienes un equipo JBL que necesita garantía, regístralo aquí.</p>
+    <a href="{{ url_for('registrar') }}" class="boton">Registrar Equipo</a>
 </body>
 </html>
